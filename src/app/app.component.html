@@ -1,0 +1,23 @@
+
+      <nav class="navbar navbar-inverse navbar-fixed-top"> 
+          <ul class="nav nav-tabs " style = "font-size: 20px">
+            <li> <img class="logo" src="./../assets/images/skf.jpg" alt="skf-logo"></li>
+            <li><a routerLink="/" routerLinkActive = "active" [routerLinkActiveOptions]="{exact : true}" >Home</a></li>
+            <li><a routerLink="/about-us" routerLinkActive = "active">About Us</a></li>
+            <li><a routerLink="/contact-us" routerLinkActive = "active">Contact Us</a></li>
+            <li><a routerLink="/terms-conditions" routerLinkActive = "active">Terms & Conditions</a></li>
+            <li class = "navbar-right"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li class = "navbar-right"><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </nav>
+
+
+<div style="margin-top:120px; margin-bottom: 200px;">
+    <!-- <app-skf></app-skf> -->
+</div>  
+    
+<router-outlet></router-outlet>
+
+<div class="footer">
+    <p> &copy;  SPixians</p>
+</div>

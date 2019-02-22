@@ -1,0 +1,12 @@
+.login-image{
+    height: 300px;
+    width: 300px;
+    /* align : center ; */
+}
+.title-text{
+    text-align: center;
+}
+.login{
+    border-style: solid ;
+    border-radius: 5px;
+}

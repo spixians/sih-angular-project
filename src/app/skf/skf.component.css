@@ -1,0 +1,36 @@
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    /* z-index: 1; */
+    top: 50px;
+    left: 0;
+    background-color:black;
+    /* overflow-x: hidden; */
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    border:darkgray;
+    border-style: none;
+    border-width: 5px
+  }
+  
+  .sidenav a:active {
+    color: black;
+    background-color: white
+  }
+  .sidenav a:hover{
+    color: black;
+    background-color: white
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
