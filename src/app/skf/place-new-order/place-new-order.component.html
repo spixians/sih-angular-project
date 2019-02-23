@@ -17,9 +17,9 @@
       <div class="form-group">
         <label for="commodity">Commodity</label>
         <input 
-        type="string"
+        type="text"
         id="commodity" 
-        class="form-control"
+        class="form-control" style="background-color: white"
         ngModel required
         name="commodity">
       </div>
@@ -50,4 +50,15 @@
     
   </form>
 
+</div>
+<div class="container" *ngIf="submitted">
+  <div class="row"  >
+    <div class="col-xs-12">
+      <h3>Your Data : </h3>
+      <p>Supplier Name: {{user.suppliername}} </p>
+      <p>Commodity : {{user.commodity}}</p>
+      <p>Quantity : {{user.quantity}}</p>
+      <p>Total Amount : {{user.totalamount}} </p> 
+    </div>
+  </div>
 </div>
