@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { FormsModule  } from '@angular/forms';
+ 
 import { AboutUsComponent } from  './about-us/about-us.component';
 import { ContactUsComponent }  from './contact-us/contact-us.component';
 import { DefaultHomePageComponent } from './default-home-page/default-home-page.component';
@@ -20,6 +21,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes),
+    FormsModule,
+
   ],
   exports: [
     RouterModule,

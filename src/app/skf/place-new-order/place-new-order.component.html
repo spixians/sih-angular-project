@@ -1,0 +1,53 @@
+<div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <label for="title"><h2>ENTER DETAILS OF NEW ORDER</h2></label>
+    <div id="user-data">
+
+      <div class="form-group">
+        <label for="suppliername">Supplier Name</label>
+        <input 
+        type="text" 
+        id="suppliername" 
+        class="form-control" style="background-color: white"
+        ngModel required
+        name="suppliername"
+        #suppliername = "ngModel">
+        <span class="help-block" *ngIf="checkSupplier(suppliername)">Please enter a valid email!</span>
+      </div>
+      <div class="form-group">
+        <label for="commodity">Commodity</label>
+        <input 
+        type="string"
+        id="commodity" 
+        class="form-control"
+        ngModel required
+        name="commodity">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input 
+        type="number" 
+        id="quantity" 
+        class="form-control"
+        ngModel required
+        name="quantity">
+      </div>
+      <div class="form-group">
+        <label for="totalamount">Total Amount</label>
+        <input 
+        type="number" 
+        id="totalamount" 
+        class="form-control"
+        ngModel required
+        name="totalamount">
+      </div>
+      
+    </div>
+        <button class="btn btn-primary"
+         type="submit"
+        [disabled]="!f.valid" ><b>Submit</b> </button>
+
+    
+  </form>
+
+</div>

@@ -14,6 +14,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
 import { SkfComponent } from './skf/skf.component';
 import { DashboardComponent } from './skf/dashboard/dashboard.component';
+import { PlaceNewOrderComponent } from './skf/place-new-order/place-new-order.component';
+import { FormsModule } from '@angular/forms';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -26,6 +28,7 @@ import { DashboardComponent } from './skf/dashboard/dashboard.component';
     TermsConditionsComponent,
     SkfComponent,
     DashboardComponent,
+    PlaceNewOrderComponent,
     //NavbarComponent,
   
   ],
@@ -35,7 +38,8 @@ import { DashboardComponent } from './skf/dashboard/dashboard.component';
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
+    FormsModule
 
   ],
   exports : [BsDropdownModule, TooltipModule, ModalModule],
