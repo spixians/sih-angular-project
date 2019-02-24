@@ -12,12 +12,31 @@ export class PlaceNewOrderComponent implements OnInit {
 
   constructor() { }
 
+
+  user = {
+    suppliername :'',
+    commodity : '' ,
+    quantity: 0,
+    totalamount : 0,
+  }
+
+  submitted = false;
+
   ngOnInit() {
 
   }
   onSubmit(form : NgForm){
-    console.log(this.placeorderform);
+    // console.log(this.placeorderform);
     // return false;
+    this.submitted=true;
+    this.user.commodity = this.placeorderform.value.commodity;
+    this.user.suppliername = this.placeorderform.value.suppliername;
+    this.user.quantity = this.placeorderform.value.quantity;
+    this.user.totalamount = this.placeorderform.value.totalamount;
+
+    this.placeorderform.reset();
+    //PLEASE WRITE POST FUNCTION HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
   }
   checkSupplier(name : NgModel){
 

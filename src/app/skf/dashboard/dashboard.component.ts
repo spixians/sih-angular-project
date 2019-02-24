@@ -22,7 +22,7 @@ export class DashboardComponent implements OnInit {
       data=>
       {
              this.data1 = data;
-             console.log(data)
+            //  console.log(data)
       
             }
     );

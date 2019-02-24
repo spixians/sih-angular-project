@@ -16,10 +16,18 @@ import { SkfComponent } from './skf/skf.component';
 import { DashboardComponent } from './skf/dashboard/dashboard.component';
 import { PlaceNewOrderComponent } from './skf/place-new-order/place-new-order.component';
 import { FormsModule } from '@angular/forms';
+// <<<<<<< HEAD
 import { freeApiService } from './services/freeapi.services';
 import { HttpClientModule } from '@angular/common/http';
 import { Comments } from './classes/comments';
 
+// =======
+import { RawMaterialComponent } from './raw-material/raw-material.component';
+import { OrderHistoryComponent } from './skf/order-history/order-history.component';
+import { CancelledOrdersComponent } from './skf/cancelled-orders/cancelled-orders.component';
+import { AcceptedOrdersComponent } from './skf/accepted-orders/accepted-orders.component';
+import { DelayedOrdersComponent } from './skf/delayed-orders/delayed-orders.component';
+// >>>>>>> 47aba1f517554a15b199392bc2804d0fbc145e9a
 //import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -33,6 +41,11 @@ import { Comments } from './classes/comments';
     SkfComponent,
     DashboardComponent,
     PlaceNewOrderComponent,
+    RawMaterialComponent,
+    OrderHistoryComponent,
+    CancelledOrdersComponent,
+    AcceptedOrdersComponent,
+    DelayedOrdersComponent,
     //NavbarComponent,
   
   ],
