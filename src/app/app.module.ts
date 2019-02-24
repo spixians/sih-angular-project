@@ -16,6 +16,11 @@ import { SkfComponent } from './skf/skf.component';
 import { DashboardComponent } from './skf/dashboard/dashboard.component';
 import { PlaceNewOrderComponent } from './skf/place-new-order/place-new-order.component';
 import { FormsModule } from '@angular/forms';
+import { RawMaterialComponent } from './raw-material/raw-material.component';
+import { OrderHistoryComponent } from './skf/order-history/order-history.component';
+import { CancelledOrdersComponent } from './skf/cancelled-orders/cancelled-orders.component';
+import { AcceptedOrdersComponent } from './skf/accepted-orders/accepted-orders.component';
+import { DelayedOrdersComponent } from './skf/delayed-orders/delayed-orders.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -29,6 +34,11 @@ import { FormsModule } from '@angular/forms';
     SkfComponent,
     DashboardComponent,
     PlaceNewOrderComponent,
+    RawMaterialComponent,
+    OrderHistoryComponent,
+    CancelledOrdersComponent,
+    AcceptedOrdersComponent,
+    DelayedOrdersComponent,
     //NavbarComponent,
   
   ],
