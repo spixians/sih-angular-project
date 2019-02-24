@@ -3,7 +3,7 @@ import { freeApiService } from '../../services/freeapi.services';
 import {Comments} from '../../classes/comments';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'skf-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
@@ -11,7 +11,7 @@ export class DashboardComponent implements OnInit {
    data1: Comments ;
 
 
-
+d
   constructor(private _freeApiService: freeApiService,
     private Comments :Comments
     ){

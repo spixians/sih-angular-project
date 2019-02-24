@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-accepted-orders',
+  selector: 'skf-accepted-orders',
   templateUrl: './accepted-orders.component.html',
   styleUrls: ['./accepted-orders.component.css']
 })
