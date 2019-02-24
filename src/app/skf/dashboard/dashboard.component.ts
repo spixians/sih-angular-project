@@ -3,7 +3,7 @@ import { freeApiService } from '../../services/freeapi.services';
 import {Comments} from '../../classes/comments';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'skf-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })

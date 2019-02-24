@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-delayed-orders',
+  selector: 'skf-delayed-orders',
   templateUrl: './delayed-orders.component.html',
   styleUrls: ['./delayed-orders.component.css']
 })

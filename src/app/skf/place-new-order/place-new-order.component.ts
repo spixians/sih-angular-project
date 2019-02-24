@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild,  } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
 
 @Component({
-  selector: 'app-place-new-order',
+  selector: 'skf-place-new-order',
   templateUrl: './place-new-order.component.html',
   styleUrls: ['./place-new-order.component.css']
 })
