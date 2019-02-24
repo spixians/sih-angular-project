@@ -16,6 +16,10 @@ import { SkfComponent } from './skf/skf.component';
 import { DashboardComponent } from './skf/dashboard/dashboard.component';
 import { PlaceNewOrderComponent } from './skf/place-new-order/place-new-order.component';
 import { FormsModule } from '@angular/forms';
+import { freeApiService } from './services/freeapi.services';
+import { HttpClientModule } from '@angular/common/http';
+import { Comments } from './classes/comments';
+
 //import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -39,11 +43,21 @@ import { FormsModule } from '@angular/forms';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     SidebarModule.forRoot(),
-    FormsModule
-
+    FormsModule,
+    HttpClientModule,
   ],
   exports : [BsDropdownModule, TooltipModule, ModalModule],
-  providers: [],
+  providers: [freeApiService,Comments
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+
+
+
+
+

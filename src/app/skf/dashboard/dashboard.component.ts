@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { freeApiService } from '../../services/freeapi.services';
+import {Comments} from '../../classes/comments';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,45 +8,45 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+   data1: Comments ;
 
-  constructor() { }
+
+
+  constructor(private _freeApiService: freeApiService,
+    private Comments :Comments
+    ){
+    // console.log('hi')
+    this._freeApiService.getcomments()
+    .subscribe
+    (
+      data=>
+      {
+             this.data1 = data;
+             console.log(data)
+      
+            }
+    );
+
+  }
+ 
+
 
   ngOnInit() {
-  }
-  data1: Array<{supplier: string , orderDate: string ,deliveryDate : string ,description : String }> = [
-    {
-      supplier: "Palak Keni",
-      orderDate : "20/02/2019",
-      deliveryDate : "24/02/2019",
-      description : "some short description about the product and the quantity"
-    },{
-      supplier: "Palak Keni",
-      orderDate : "20/02/2019",
-      deliveryDate : "24/02/2019",
-      description : "some short description about the product and the quantity"
-    },{
-      supplier: "Palak Keni",
-      orderDate : "20/02/2019",
-      deliveryDate : "24/02/2019",
-      description : "some short description about the product and the quantity"
-    },{
-      supplier: "Palak Keni",
-      orderDate : "20/02/2019",
-      deliveryDate : "24/02/2019",
-      description : "some short description about the product and the quantity"
-    },{
-      supplier: "Palak Keni",
-      orderDate : "20/02/2019",
-      deliveryDate : "24/02/2019",
-      description : "some short description about the product and the quantity"
-    },{
-      supplier: "Palak Keni",
-      orderDate : "20/02/2019",
-      deliveryDate : "24/02/2019",
-      description : "some short description about the product and the quantity"
-    }
-    
-  ];
+   
 
+    // get api logic and console.log
+  }
+  
 
 }
+
+
+
+
+
+
+
+
+
+
+

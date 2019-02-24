@@ -1,15 +1,23 @@
 <div class="card" *ngFor = "let d of data1">
   <div class="container-fluid"  >
     <div class="card-color">
-        <h3 style="margin-left: 20px ;" >Supplier Name : {{d.supplier}}</h3>
+        <h3 style="margin-left: 20px ;" >orderId : {{d.orderId}}</h3>
         <br>
-        <h4 style="margin-left: 20px ;" >Order Date :{{d.orderDate}}</h4>
-        <h4 align="right" style="margin-right: 20px ;">Delivery Date : {{d.deliveryDate}}</h4>
-        <h5 style="margin-left: 20px ;"><b>Desciption</b> {{d.description}} </h5>
+        <h4 style="margin-left: 20px ;" >Qty :{{d.Qty}}</h4>
+        <h4 align="right" style="margin-right: 20px ;">unitPrice : {{d.unitPrice}}</h4>
+        <h5 style="margin-left: 20px ;"><b>totalPrice</b> {{d.totalPrice}} </h5>
+
+        <h5 style="margin-left: 20px ;"><b>owner</b> {{d.owner.split('#')[1]}} </h5>
+
         <p align="right" style="margin-right: 20px ;">
+          
+        
           <button type="button" class="btn btn-success" style="font-size: 20px " >View Details <span class="glyphicon glyphicon glyphicon-share-alt"></span></button>
         </p>
     </div>
     
   </div>
 </div>
+<script>
+
+</script>
