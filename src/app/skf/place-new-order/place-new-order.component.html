@@ -1,45 +1,51 @@
 <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-    <label for="title"><h2>ENTER DETAILS OF NEW ORDER</h2></label>
+    <label for="title"><h2>ENTER DETAILS oOF NEW ORDER</h2></label>
     <div id="user-data">
 
+     
+
+
+     
+     
+
+
+
       <div class="form-group">
-        <label for="suppliername">Supplier Name</label>
+        <label for="orderId">orderId</label>
         <input 
-        type="text" 
-        id="suppliername" 
+        type="number"
+        id="orderId" 
         class="form-control" style="background-color: white"
         ngModel required
-        name="suppliername"
-        #suppliername = "ngModel">
-        <span class="help-block" *ngIf="checkSupplier(suppliername)">Please enter a valid email!</span>
+        name="orderId">
       </div>
       <div class="form-group">
-        <label for="commodity">Commodity</label>
+        <label for="Qty">Qty</label>
         <input 
-        type="text"
-        id="commodity" 
+        type="number"
+        id="Qty" 
         class="form-control" style="background-color: white"
         ngModel required
-        name="commodity">
+        name="Qty">
       </div>
       <div class="form-group">
-        <label for="quantity">Quantity</label>
+        <label for="unitPrice">unitPrice</label>
         <input 
         type="number" 
-        id="quantity" 
+        id="unitPrice" 
         class="form-control"
         ngModel required
-        name="quantity">
+        name="unitPrice">
       </div>
       <div class="form-group">
-        <label for="totalamount">Total Amount</label>
+        <label for="totalPrice">totalPrice </label>
         <input 
         type="number" 
-        id="totalamount" 
+        id="totalPrice" 
         class="form-control"
         ngModel required
-        name="totalamount">
+        name="totalPrice">
       </div>
       
     </div>
@@ -55,10 +61,10 @@
   <div class="row"  >
     <div class="col-xs-12">
       <h3>Your Data : </h3>
-      <p>Supplier Name: {{user.suppliername}} </p>
-      <p>Commodity : {{user.commodity}}</p>
-      <p>Quantity : {{user.quantity}}</p>
-      <p>Total Amount : {{user.totalamount}} </p> 
+      <p>orderId : {{user.orderId}}</p>
+      <p>unitPrice : {{user.unitPrice}}</p>
+      <p>totalPrice : {{user.totalPrice}} </p> 
+
     </div>
   </div>
 </div>

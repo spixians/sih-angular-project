@@ -11,7 +11,6 @@ export class DashboardComponent implements OnInit {
    data1: Comments ;
 
 
-d
   constructor(private _freeApiService: freeApiService,
     private Comments :Comments
     ){
@@ -22,11 +21,16 @@ d
       data=>
       {
              this.data1 = data;
-            //  console.log(data)
+             console.log(this.data1)
       
             }
     );
 
+  
+  
+  
+  
+  
   }
  
 
