@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import {Comments} from '../classes/comments';
+import {Transaction} from '../classes/transaction';
 
 @Injectable()
 export class freeApiService{
@@ -19,5 +20,11 @@ post(opost:Comments): Observable<any> {
     return this.httpclient.post("http://localhost:3000/api/PO2",opost);
 }
 
+
+gettransaction(): Observable<any> {
+    return this.httpclient.get("http://localhost:3000/api/PO2");
+ 
+    
+ }
 
 }

@@ -16,16 +16,12 @@ export class PlaceNewOrderComponent implements OnInit {
   }
 
   user = {
-    // suppliername :'',
-    // commodity : '' ,
-    // quantity: 0,
-    // totalamount : 0,
+    
 
      $class: '',
     orderId: '',
     Qty: 0,
-    unitPrice: 0,
-    totalPrice: 0,
+    time_of_issue: '',
     owner: '',
 
 
@@ -46,22 +42,20 @@ export class PlaceNewOrderComponent implements OnInit {
     // console.log(this.placeorderform);
     // return false;
     this.submitted=true;
-     this.user.$class = "org.example.trading.PO2";
+     this.user.$class = "org.example.trading.place_skf_compsupplier";
     this.user.orderId = this.placeorderform.value.orderId;
     this.user.Qty = this.placeorderform.value.Qty;
-    this.user.unitPrice = this.placeorderform.value.unitPrice;
-    this.user.totalPrice = this.placeorderform.value.totalPrice;
+    this.user.time_of_issue = this.placeorderform.value.time_of_issue;
     this.user.owner = "resource:org.example.trading.SKF#3";
 
 
     var opost=new Comments()
     
        
-     opost.$class = "org.example.trading.PO2";
+     opost.$class = "org.example.trading.place_skf_compsupplier";
     opost.orderId = this.user.orderId
     opost.Qty = this.user.Qty;
-    opost.unitPrice = this.user.unitPrice
-    opost.totalPrice = this.user.totalPrice 
+    opost.time_of_issue = this.user.time_of_issue
     opost.owner = "resource:org.example.trading.SKF#3";
   
     this._freeApiService.post(opost)

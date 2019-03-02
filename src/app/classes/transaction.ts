@@ -1,5 +1,4 @@
-
-export class Comments{
+export class Transaction{
 
    
     $class: string
@@ -7,5 +6,4 @@ export class Comments{
     Qty: number
     time_of_issue: string
     owner: string
-    
 }
